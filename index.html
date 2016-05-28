@@ -1,0 +1,272 @@
+<html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="materialize/jquery-2.2.3.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <title>Moving Away From Oil</title>
+
+    </head>
+
+    <style>
+
+    	body
+    	{
+    		color: #000000;
+    	}
+
+    	h5
+    	{
+    		color: #64dd17;
+    	}
+
+    	p{
+    		color: #ffffff;
+    	}
+
+    	ul.collapsible
+    	{
+    		color: #ffffff;
+    	}
+
+		.axis path,
+		.axis line {
+		  fill: none;
+		  stroke: white;
+		  shape-rendering: crispEdges;
+		}
+		.axis text
+		{
+			fill: white;
+		}
+
+		.x.axis path {
+		  display: none;
+		}
+
+		.line {
+		  fill: none;
+		  stroke: white;
+		  stroke-width: 1.5px;
+		}
+
+		.container
+		{
+			width: 80%;
+		}
+		
+		.legend 
+		{
+			font-size: 16px;
+			font-weight: bold;
+			text-anchor: middle;
+		}
+		
+		@font-face {
+		  font-family: "Dollie Script Personal Use";
+		  src: url(fonts/DollieScript_PersonalUse.ttf) format("truetype");
+		}
+		h1 { font-family: "Dollie Script Personal Use"; }
+		
+	</style>  
+
+    <body style="background-color: #37474f;">
+	
+		<div class="navbar-fixed">
+		  <nav>
+		    <div class="nav-wrapper light-green">
+		      <!-- <a href="#" class="brand-logo right">Logo</a> -->
+		      <ul id="nav-mobile" class="left hide-on-med-and-down">
+		        <li><a href="index.html" style="font-size: 24; font-family: 'Dollie Script Personal Use'; ">Moving Away From Oil</a></li>
+		        <li><a href="cars/afvcars.html">Garage</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		</div>
+
+	<!--Main Part-->
+
+		<div class="container">
+			<div class="section">
+				<div class="row">
+					<h1 style="word-wrap: break-word; color: #64dd17;">Moving away from oil</h1>
+					<h5 style="word-wrap: break-word; color: #ffffff;">As global warming gets worse, machines in general are being made to be more efficient while being more environmentally friendly.</h5>
+					<h5 style="word-wrap: break-word; color: #ffffff;">Car emissions and the dwindling supply of oil are a growing concern, and automakers have been scrambling to improve their techonology rapidly to make alternative fuel vehicles a practical choice.</h5>
+					<h5>Click any of the buttons below to learn more about this trend.</h5>
+				</div>
+			</div>
+
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<li>
+	  			<div class="collapsible-header blue-grey lighten-1"><i class="material-icons">settings_backup_restore</i><b>Fuel savings through AFVs</b></div>
+	  			<div class="collapsible-body">
+	  				<div class="container">
+						<div class="row"id="test" style="text-align: center;">
+							<script src="d3/d3.min.js"></script>
+							<script src="scripts/Savings through AFV.js">
+							</script>
+						</div>
+						<div class="row">
+							<p>Alternative Fuel Vehicles, compared to their oil powered siblings are much more economical in terms of energy consumption.</p>
+						</div>
+	  				</div>
+	  			</div>
+	  		</li>
+
+	  		<li>
+	  			<div class="collapsible-header blue-grey lighten-1"><i class="material-icons">store</i><b>AFVs offered by manufacturers</b></div>
+    			<div class="collapsible-body">
+    				<div class="container">
+						<div class="row" id="test2" style="text-align: center;">
+							<script src="d3/d3.min.js"></script>
+							<script src="scripts/AFVModels(Brand).js"></script>
+						</div>
+						<div class="row">
+							<p>Through the years, manufacturers have been AFVs to the public. What used to be highly impractical, unreliable and, slow cars have improved over time. Due to improvements in technology and the growing concern for global warming, more and more manufacturers have been offering AFVs ever since.</p>
+						</div>
+					</div>
+    			</div>
+	  		</li>
+
+	  		<li>
+	  			<div class="collapsible-header blue-grey lighten-1"><i class="material-icons">loop</i><b>Hybrid Vehicle Sales</b></div>
+	  			<div class="collapsible-body">
+	  				<div class="container">
+	  					<div class="row" id="test3" style="text-align: center;">
+							<script src="d3/d3.min.js"></script>
+							<script src="scripts/HEV Sales.js"></script>
+						</div>
+						<div class="row">
+							<p>Hybrid vehicles, unlike other cars have two power sources: electric and gas. They combine the range and power of regular petrol powered vehicles while having the economy and eco friendliness of and electric vehicle. With the exception of the La Ferrari, all other hybrids can choose from electric only operation, gas only operation, or normal, hybrid operation.</p>
+						</div>
+	  				</div>
+	  			</div>
+	  		</li>
+
+	  		<li>
+	  			<div class="collapsible-header blue-grey lighten-1"><i class="material-icons">power_settings_new</i><b>Electric Vehicle Sales</b></div>
+	  			<div class="collapsible-body">
+	  				<div class="container">
+	  					<div class="row" id="test4" style="text-align: center;">
+							<script src="d3/d3.min.js"></script>
+							<script src="scripts/PEV Sales.js"></script>
+						</div>
+						<div class="row">
+							<p>Electric cars are basically life-sized battery powered R/C cars. They rely on a complex system of electric motors, batteries and recharging systems.</p>
+						</div>
+	  				</div>
+	  			</div>
+	  		</li>
+
+	  		<li>
+	  			<div class="collapsible-header blue-grey lighten-1"><i class="material-icons">equalizer</i><b>AFV Fuel Stations</b></div>
+	  			<div class="collapsible-body">
+	  				<div class="container">
+	  					<div class="row" id="test6" style="text-align: center;">
+							<script src="d3/d3.min.js"></script>
+							<script src="scripts/AFVFuelStations.js"></script>
+						</div>
+						<div class="row">
+							<p>One of the main reasons that AFVs are not yet as widespread is because of its fuel source. Obviously, it would not run on regular gasoline. Electric and hybrid cars require electric sources of energy while cars running on CNG requires a station that gives CNG for vehicles for example.</p>
+							<p>Although the recent trend of switching to eco friendly cars have driven up the population of these alternative fuel sources.</p>
+						</div>
+	  				</div>
+	  			</div>
+	  		</li>
+			<!-- Extra Template
+	  		<li>
+	  			<div class="collapsible-header blue-grey lighten-1"><i class="material-icons"></i><b>Second</b></div>
+	  			<div class="collapsible-body">
+	  				<div class="container">
+	  					
+	  				</div>
+	  			</div>
+	  		</li>
+			-->
+
+	  	</ul>
+
+		<!-- OLD CODE
+			<div class="section">
+				<div class="divider"></div>
+				<div class="row"id="test" style="text-align: center;">
+					<script src="d3/d3.min.js"></script>
+					<script src="scripts/Savings through AFV.js">
+					</script>
+				</div>
+				<div class="row">
+					<h5>Savings through AFVs</h5>
+					<p>Stuff</p>
+				</div>
+			</div>
+			
+
+			<div class="section">
+				<div class="divider"></div>
+				<div class="row" id="test2" style="text-align: center;">
+					<script src="d3/d3.min.js"></script>
+					<script src="scripts/AFVModels(Brand).js"></script>
+					</div>
+				<div class="row">
+					<h5>AFVs offered by manufacturers</h5>
+					<p>Through the years, manufacturers have been AFVs to the public. What used to be highly impractical, unreliable and, slow cars have improved over time. Due to improvements in technology and the growing concern for global warming, more and more manufacturers have been offering AFVs ever since.</p>
+				</div>
+			</div>
+			
+			<div class="section">
+				<div class="divider"></div>
+				<div class="row" id="test3" style="text-align: center;">
+					<script src="d3/d3.min.js"></script>
+					<script src="scripts/HEV Sales.js"></script>
+				</div>
+				<div class="row">
+					<h5>Hybrid Vehicle Sales</h5>
+					<p>Hybrid vehicles, unlike other cars have two power sources: electric and gas. They combine the range and power of regular petrol powered vehicles while having the economy and eco friendliness of and electric vehicle. With the exception of the La Ferrari, all other hybrids can choose from electric only operation, gas only operation, or normal, hybrid operation.</p>
+					</div>
+			</div>
+			
+			<div class="section">
+				<div class="divider"></div>
+				<div class="row" id="test4" style="text-align: center;">
+					<script src="d3/d3.min.js"></script>
+					<script src="scripts/PEV Sales.js"></script>
+				</div>
+				<div class="row">
+					<h5>Electric Vehicle Sales</h5>
+					<p>Stuff</p>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="divider"></div>
+				<div class="row" id="test5" style="text-align: center;">
+					<script src="d3/d3.min.js"></script>
+					<script src="scripts/AFV In-Use.js"></script>
+				</div>
+				<div class="row">
+					<h5>AFVs In Use</h5>
+					<p>Stuff</p>
+				</div>
+			</div>
+			
+			
+			<div class="section">
+				<div class="divider"></div>
+				<div class="row" id="test6" style="text-align: center;">
+					<script src="d3/d3.min.js"></script>
+					<script src="scripts/AFVFuelStations.js"></script>
+				</div>
+				<div class="row">
+					<h5>AFV Fuel Stations</h5>
+					<p>Stuff</p>
+				</div>
+			</div>
+		-->
+		</div>
+		
+    </body>
+
+</html>
